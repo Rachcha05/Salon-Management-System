@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Site Metas -->
+<title>SMBarber - Responsive HTML5 Template</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- Colors CSS -->
+<link rel="stylesheet" href="css/colors.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="barber_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="cube-wrapper">
+            <div class="cube-folding">
+                <span class="leaf1"></span>
+                <span class="leaf2"></span>
+                <span class="leaf3"></span>
+                <span class="leaf4"></span>
+            </div>
+            <span class="loading" data-name="Loading">SMBarber Loading</span>
+        </div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+    <div id="wrapper">
+
+        <!-- Sidebar-wrapper -->
+        <div id="sidebar-wrapper">
+            <div class="side-top">
+                <div class="logo-sidebar">
+                    <a href="index.html"><img src="images/logos/logo.png" alt="image"></a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="services.html">Our Services</a></li>
+                    <li><a href="barbers.html">Our Barbers</a></li>
+                    <li><a href="appointment.php">Appointment</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="/admin">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div id="services" class="section lb">
+                <div class="container-fluid">
+                    <div class="section-title row text-center">
+                        <div class="col-md-8 col-md-offset-2">
+                            <small>WELCOME TO THE OUR BARBER SHOP</small>
+                            <h3>OUR SERVICES</h3>
+                            <hr class="grd1">
+                        </div>
+                    </div><!-- end title -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="service-wrap clearfix">
+                                <img src="uploads/1.jpg" alt="" class="img-responsive img-rounded alignleft">
+                                <h4>Hair styling</h4>
+                                <p>Hair styling includes cutting hair using basic and advanced techniques, consulting
+                                    customers about styles and colors and
+                                    applying hair care products, like treatment oils and masks.</p>
+                            </div><!-- end issue -->
+
+                            <div class="service-wrap clearfix">
+                                <img src="uploads/2.jpg" alt="" class="img-responsive img-rounded alignleft">
+                                <h4>Make-up</h4>
+                                <p>Make-up includes enhancing facial aesthetics through makeup, creating custom looks
+                                    for you, and working with actors on
+                                    movie sets.</p>
+                            </div><!-- end issue -->
+
+                            <div class="service-wrap lastchild clearfix">
+                                <img src="uploads/3.jpg" alt="" class="img-responsive img-rounded alignleft">
+                                <h4>facial and skin care</h4>
+                                <p>A facial is a beautifying skin treatment that cleanses pores, exfoliates dead skin
+                                    cells, hydrates, and moisturizes the
+                                    skin, and treats common skin concerns with a custom regime.</p>
+                            </div><!-- end issue -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-6">
+                            <div class="service-wrap clearfix">
+                                <img src="uploads/4.jpg" alt="" class="img-responsive img-rounded alignleft">
+                                <h4>Eyelash extensions</h4>
+                                <p>Eyelash extensions are semi-permanent fibers that are attached to your natural
+                                    eyelashes to make your lash fringe look
+                                    longer, fuller, and darker. Individual lash extensions are applied to each of your
+                                    individual natural eyelashes (one
+                                    extension per natural eyelash) using a semi-permanent glue.</p>
+                            </div><!-- end issue -->
+
+                            <div class="service-wrap clearfix">
+                                <img src="uploads/5.jpg" alt="" class="img-responsive img-rounded alignleft">
+                                <h4>forming the beard</h4>
+                                <p>The ultimate goal of your beard style is to add contrast and dimension to your face.
+                                    Different face shapes should
+                                    highlight certain facial features—not every style looks great on every guy. You can
+                                    choose the right style for your
+                                    face.</p>
+                            </div><!-- end issue -->
+
+                            <div class="service-wrap lastchild clearfix">
+                                <img src="uploads/6.jpg" alt="" class="img-responsive img-rounded alignleft">
+                                <h4>Hair removing</h4>
+                                <p>We offer a wide range of hair removal treatments in numerous salons, to target every
+                                    area of the body and face, for
+                                    smooth and long-lasting results.</p>
+                            </div><!-- end issue -->
+                        </div><!-- end col -->
+                    </div>
+                </div><!-- end container -->
+            </div><!-- end section -->
+        </div>
+    </div><!-- end wrapper -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <script src="js/responsive-tabs.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        (function ($) {
+            "use strict";
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+            smoothScroll.init({
+                selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+                selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+                speed: 500, // Integer. How fast to complete the scroll in milliseconds
+                easing: 'easeInOutCubic', // Easing pattern to use
+                offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+                callback: function (anchor, toggle) { } // Function to run after scrolling
+            });
+        })(jQuery);
+    </script>
+
+</body>
+
+</html>
